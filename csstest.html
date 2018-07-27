@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            div {border:1px solid #aaaaaa; width:800px; height:200px; opacticy:0.5; background-color:#aaaaaa;}
+            #div2 {width:200px; height:500px; float:left; background-color:red;}
+            #div3 {width:200px; height:500px; float:right; background-color:blue;}
+            #div4 {clear:both}
+            #div1 + div {clear:both; content:""; display:table;}
+        </style>
+    </head>
+    <body>
+        <div id="div1"> Header</div>
+        <div>
+            <div id="div2"> Side</div>
+            <div id="div3"> Content</div>
+        </div>
+        <div id="div4"> Footer</div>
+    </body>
+</html>
